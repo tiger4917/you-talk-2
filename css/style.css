@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* font-family: 'Open Sans', sans-serif; */
+    color: #333;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    border-bottom: 2px solid #EFF5FB;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 76px;
+}
+
+.header__list {
+    margin-right: 286px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    line-height: 114%;
+}
+
+.header__item {
+    transition: all 0.4s;
+    padding: 15px 0 14px;
+    position: relative;
+}
+
+.header__item::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    left: auto;
+    right: 0;
+    background-color: #03B2A5;
+    height: 3px;
+    bottom: -2px;
+    transition: all .3s;
+}
+
+.header__item:hover::before {
+    width: 100%;
+    right: auto;
+    left: 0;
+}
+
+.header__item:last-child {
+    margin-left: 30px;
+
+}
+
+.heder__link {
+    color: inherit;
+
+}
+
+.activ {
+    position: relative;
+}
+
+.activ::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/header-arrow.svg);
+    top: 2px;
+    right: -20px;
+    width: 14px;
+    height: 14px;
+}
+
+
+.header__btn {
+    padding: 14px 20px;
+    color: #03B2A5;
+    text-align: center;
+    border-radius: 4px;
+    background: #E3F5F5;
+    font-weight: 700;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .header__list {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 880px) {
+
+    .header__list,
+    .header__btn {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 768px){
+    
+}
+@media (max-width: 680px){
+
+}
+@media (max-width: 414px){
+    .header__nav {
+        min-height: 72px;
+        padding: 0 4px;
+    }
+
+    .header__logo svg {
+        width: 48px;
+        height: 34px;
+    }
+}
+@media (max-width: 320px){
+
+}
