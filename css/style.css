@@ -763,7 +763,7 @@ input::placeholder {
     }
     
     .content__title{
-        width: 295px;
+        max-width: 295px;
     }
     .article-what-else__block,
     .article-what-else__big-block {
